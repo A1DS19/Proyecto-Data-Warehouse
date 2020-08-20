@@ -94,7 +94,7 @@ ID_TIEMPO INT,
 PRECIO_PRODUCTO FLOAT,
 PRECIO_OPERACION FLOAT,
 PRECIO_TRATAMIENTO FLOAT,
-CANTIDAD_PRODUCTO FLOAT
+CANTIDAD_PRODUCTO INT
 
 CONSTRAINT RELACION_A_EMPLEADO FOREIGN KEY (ID_EMPLEADO) REFERENCES EMPLEADOS(EmpleadoId),
 CONSTRAINT RELACION_A_CLIENTE FOREIGN KEY (ID_CLIENTE) REFERENCES CLIENTES(ID_CLIENTE),
@@ -120,29 +120,27 @@ values
 
 insert into TRATAMIENTOS
 values
-('NINGUNO',0),
-('Effitix pipetas antiparasitarias',40000),
-('Aceite Grizzly de Salmón',11000),
-('Four Paws Brewers Yeast con ajo',8000),
-('Tabletas para perros y gatos',6000),
-('Potty Mouth',23000),
-('Crema Paw Guard',13000),
-('Ear Wash 4 Oz', 13000),
-('Ear Powder 24 Gramos',12000),
-('Hemostatico Gel 1.16 Oz', 12000),
-('Dosificador Para Pastillas', 4000),
-('Tratamiento para impedir la Coprofagia',13000);
+('Effitix pipetas antiparasitarias'),
+('Aceite Grizzly de Salmón'),
+('Four Paws Brewers Yeast con ajo'),
+('Tabletas para perros y gatos'),
+('Potty Mouth'),
+('Crema Paw Guard'),
+('Ear Wash 4 Oz'),
+('Ear Powder 24 Gramos'),
+('Hemostatico Gel 1.16 Oz'),
+('Dosificador Para Pastillas'),
+('Tratamiento para impedir la Coprofagia');
 
 insert into OPERACIONES
 values
-('NINGUNO',0),
-('Cirugía oncológica',2000000),
-('Operación de la vista',5000000),
-('Cirugía digestiva',10000000),
-('Cirugía traumatológica',1000000),
-('Operación de hernias',5000000),
-('Cirugía del aparato urinario',1500000),
-('Cirugía odontológica',500000);
+('Cirugía oncológica'),
+('Operación de la vista'),
+('Cirugía digestiva'),
+('Cirugía traumatológica'),
+('Operación de hernias'),
+('Cirugía del aparato urinario'),
+('Cirugía odontológica');
 
 insert into CATEGORIAS
 values
